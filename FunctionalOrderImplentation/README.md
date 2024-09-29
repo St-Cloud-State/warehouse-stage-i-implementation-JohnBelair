@@ -1,0 +1,7 @@
+My portion of the implementaion involved the Orders Class. I did add the isEmpty method to the ClientList Class and the isEmpty, getQtyById and setQtyById methods in the ProductList class to make my portion of the code work. Also previous implementation did not even use the ClientList class or the ProductList class so I had to make some modifications to how some of the add and display functions work so we could use the classes properly.
+
+For the "Add Product to Client's Order" function in the switch statement it checks if a Client Id exists in the ClientList and reprompts the user if the provided Id is not valid. It does the same with products to ensure that a valid product is selected. It also prompts for an qty and checks the ProductList to ensure a valid quantity is avalible. If all the parameters are then it sets the value of the qty in the product list to account for the product ordered and adds the order info to the OrderList.
+
+*Note* It does require the appended "C" or "D" to the front of the of the Id to accept the input.
+
+For the "Display Order By Client ID" function in the switch statement it again prompts the user for a client Id. If the client Id is valid it looks through the order list and returns every instance of an Order that is associated with that client.
